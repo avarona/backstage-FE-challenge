@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import FormInput from '../../components/FormInput';
+import Input from '../../components/Input';
 import Button from '../../components/Button';
 import Logger, { Props as LoggerProps } from '../../components/Logger';
 
@@ -41,8 +41,8 @@ class Form extends React.Component<{}, State> {
     const { inputValue, resultValue, log } = this.state;
     return (
       <>
-        <form className={styles.formContainer} onSubmit={this.onSubmit}>
-          <FormInput onChange={this.onChange} value={inputValue} />
+        <form className={styles.formContainer} onSubmit={this.onSubmit} autoComplete="off">
+          <Input onChange={this.onChange} value={inputValue} />
           <Button text="Submit" />
           {resultValue}
         </form>
