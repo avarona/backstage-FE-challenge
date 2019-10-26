@@ -8,7 +8,7 @@ type Props = {
 
 const Input = ({ value, onChange }: Props) => (
   <div className={styles.inputContainer}>
-    <input className={styles.input} type="text" name="input" onChange={onChange} defaultValue={value} />
+    <input className={styles.input} type="text" name="input" onChange={onChange} value={value} />
   </div>
 );
 
