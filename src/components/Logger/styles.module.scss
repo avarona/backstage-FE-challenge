@@ -1,5 +1,6 @@
 .loggerContainer {
   width: 100%;
   min-height: 20%;
-  background-color: blue;
+  border-top: 1px solid #aaa;
+  overflow-y: auto
 }
