@@ -1,9 +1,14 @@
 import React from 'react';
-import './styles.css';
+import styles from './styles.module.scss';
 
-const FormInput = () => (
-  <div className="input-container">
-    <input className="input" type="text" />
+type Props = {
+  value: string;
+  onChange?: (e: React.FormEvent<HTMLInputElement>) => void;
+}
+
+const FormInput = ({ value, onChange }: Props) => (
+  <div className={styles.inputContainer}>
+    <input className={styles.input} type="text" name="input" onChange={onChange} defaultValue={value} />
   </div>
 );
 

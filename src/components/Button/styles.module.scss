@@ -1,0 +1,15 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  padding: 4px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background-color: red;
+  }
+}

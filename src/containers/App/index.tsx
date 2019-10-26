@@ -1,10 +1,14 @@
 import React from 'react';
-import './styles.css';
-import FormInput from '../../components/FormInput';
+import styles from './styles.module.scss';
+import Form from '../Form';
+import Logger from '../../components/Logger';
 
 const App = () => (
-  <div className="App-container">
-    <FormInput />
+  <div className={styles.appContainer}>
+    <div className={styles.appContent}>
+      <Form />
+    </div>
+    <Logger />
   </div>
 );
 
