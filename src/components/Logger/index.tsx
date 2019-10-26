@@ -9,7 +9,7 @@ export type Props = {
 const Logger = ({ log }: Props) => (
   <ul className={styles.loggerContainer}>
     {log.map((item, i) => (
-      <li key={i}>
+      <li key={i} className={styles.loggerItem}>
         <LogItem item={item}/>
       </li>
     ))}

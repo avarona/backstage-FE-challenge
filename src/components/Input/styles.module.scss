@@ -1,10 +1,11 @@
 .inputContainer {
-  background-color: red;
+  width: 400px;
 }
 
 .input {
-  width: 400px;
+  width: 100%;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #aaa;
+  outline: none;
 }

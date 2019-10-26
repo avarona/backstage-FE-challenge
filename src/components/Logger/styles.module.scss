@@ -1,6 +1,10 @@
 .loggerContainer {
-  width: 100%;
-  min-height: 20%;
+  height: 40%;
   border-top: 1px solid #aaa;
-  overflow-y: auto
+  overflow-y: auto;
+  list-style: none;
+}
+
+.loggerItem {
+  padding: 8px 0;
 }

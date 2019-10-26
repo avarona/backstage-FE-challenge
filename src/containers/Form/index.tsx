@@ -41,11 +41,15 @@ class Form extends React.Component<{}, State> {
     const { inputValue, resultValue, log } = this.state;
     return (
       <>
-        <form className={styles.formContainer} onSubmit={this.onSubmit} autoComplete="off">
-          <Input onChange={this.onChange} value={inputValue} />
-          <Button text="Submit" />
-          {resultValue}
-        </form>
+        <div className={styles.formContainer}>
+          <div className={styles.resultValue}>
+            {!!resultValue ? resultValue : null}
+          </div>
+          <form className={styles.formFields} onSubmit={this.onSubmit} autoComplete="off">
+              <Input onChange={this.onChange} value={inputValue} />
+              <Button text="Submit" />
+          </form>
+        </div>
 
         <Logger log={log}/>
       </>
