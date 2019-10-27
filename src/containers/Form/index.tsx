@@ -15,7 +15,7 @@ type State = {
 class Form extends React.Component<{}, State> {
   state = {
     inputValue: '',
-    resultValue: '',
+    resultValue: '0',
     log: [],
   }
 
@@ -43,7 +43,7 @@ class Form extends React.Component<{}, State> {
       <>
         <div className={styles.formContainer}>
           <div className={styles.resultValue}>
-            {!!resultValue ? resultValue : null}
+            {resultValue}
           </div>
           <form className={styles.formFields} onSubmit={this.onSubmit} autoComplete="off">
               <Input onChange={this.onChange} value={inputValue} />

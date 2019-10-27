@@ -1,9 +1,13 @@
 .formContainer {
+  display: flex;
+  flex-direction: column;
   margin: auto;
 }
 
 .resultValue {
-  font-size: 24px;
+  font-size: 48px;
+  min-height: 100px;
+  margin: 0 auto;
 }
 
 .formFields {

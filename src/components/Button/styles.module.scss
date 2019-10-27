@@ -3,14 +3,18 @@
   justify-content: center;
   align-items: center;
   width: 80px;
-  padding: 4px;
+  padding: 16px;
   border: 1px solid #aaa;
+  border-radius: 4px;
   cursor: pointer;
   user-select: none;
-  transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   outline: none;
+  font-size: 14px;
+  background-color: #48a0ff;
+  color: white;
 
   &:hover {
-    background-color: red;
+    background-color: darken(#48a0ff, 20%);
   }
 }
