@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
 export type Props = {
   // could be global declaration if logging other types of items
@@ -17,9 +18,13 @@ const LogItem = ({ item }: Props) => {
   const itemProperties = Object.keys(item).sort() as Keys;
 
   return (
-    <ul>
+    <ul className={styles.logItemContainer}>
       {itemProperties.map((key, i) => {
-        return <li key={i}>{key}: {item[key]}</li>
+        return (
+          <li key={i}>
+            <strong>{key}:</strong> {item[key]}
+          </li>
+        )
       })}
     </ul>
   )

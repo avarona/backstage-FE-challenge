@@ -1,8 +1,15 @@
 .loggerContainer {
   height: 40%;
   border-top: 1px solid #aaa;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 0 1px #aaa;
   overflow-y: auto;
   list-style: none;
+  background-color: #525252;//#767D92;
+  width: 600px;
+  margin: 0 auto;
+  color: white;
 }
 
 .loggerItem {

@@ -16,6 +16,7 @@ const Input = ({ value, onChange }: Props) => (
       onChange={onChange}
       value={value}
       placeholder="Enter a number between 0 and 101"
+      required
     />
   </div>
 );
