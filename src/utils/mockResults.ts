@@ -1,6 +1,6 @@
 import { memoize } from './helpers';
 
-const sumOfSquares = (n: number) => {
+export const sumOfSquares = (n: number) => {
   let sum = 0;
   for(let i = 1; i <= n; i++) {
     sum += Math.pow(i, 2);
@@ -8,7 +8,7 @@ const sumOfSquares = (n: number) => {
   return sum;
 };
 
-const squareOfSum = (n: number) => {
+export const squareOfSum = (n: number) => {
   let sum = 0;
   for(let i = 1; i <= n; i++) {
     sum += i;
@@ -16,7 +16,7 @@ const squareOfSum = (n: number) => {
   return Math.pow(sum, 2);
 };
 
-const calculateDifference = (n: number) => {
+export const calculateDifference = (n: number) => {
   return Math.abs(squareOfSum(n) - sumOfSquares(n));
 };
 

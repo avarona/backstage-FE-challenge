@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders 1`] = `"<div class=\\"appContainer\\"><h1 class=\\"appTitle\\">Backstage Front End Challenge</h1><div class=\\"formContainer\\"><div class=\\"resultValue\\">0</div><form class=\\"formFields\\" autoComplete=\\"off\\"><div class=\\"inputContainer\\"><input type=\\"text\\" class=\\"input\\" pattern=\\"^[1-9][0-9]?$|^100$\\" name=\\"input\\" value=\\"\\" placeholder=\\"Enter a number between 0 and 101\\" required=\\"\\"/></div><button class=\\"buttonContainer\\" type=\\"submit\\">Submit</button></form></div><ul class=\\"loggerContainer\\"></ul></div>"`;

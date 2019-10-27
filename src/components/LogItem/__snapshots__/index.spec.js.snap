@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogItem renders 1`] = `"<ul class=\\"logItemContainer\\"><li><strong>datetime:</strong> what</li><li><strong>last_datetime:</strong> ?</li><li><strong>number:</strong> I</li><li><strong>occurrences:</strong> doing</li><li><strong>value:</strong> am</li></ul>"`;

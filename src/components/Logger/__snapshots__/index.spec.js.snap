@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logger with logs renders 1`] = `"<ul class=\\"loggerContainer\\"><li class=\\"loggerItem\\"><ul class=\\"logItemContainer\\"><li><strong>0:</strong> 1</li></ul></li><li class=\\"loggerItem\\"><ul class=\\"logItemContainer\\"><li><strong>0:</strong> 2</li></ul></li><li class=\\"loggerItem\\"><ul class=\\"logItemContainer\\"><li><strong>0:</strong> 3</li></ul></li></ul>"`;
+
+exports[`Logger with no logs renders 1`] = `"<ul class=\\"loggerContainer\\"></ul>"`;
